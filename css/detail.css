@@ -1,0 +1,680 @@
+@font-face {
+    font-family: 'hyundai';
+    src: url('../fonts/YouandiModernTR.ttf') format('opentype');
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 40px ;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.sub_category {
+    display: flex;
+}
+
+.sub_category li {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sub_category li i {
+    padding: 0 10px;
+    color: #999;
+}
+
+.sub_menu {
+    display: flex;
+}
+
+.sub_menu a {
+    display: block;
+    padding: 6px 8px;
+    background-color: #EFEFEF;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.sub_menu a:last-child {
+    background-color: #333333;
+    color: #EFEFEF;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+.left_photo {
+    width: 1200px;
+}
+
+.left_photo img {
+    display: block;
+    height: 964px;
+}
+
+.right_text {
+    padding: 24px 0;
+    padding-left: 64px;
+    height: 964px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right_text .title {
+    margin-bottom: 44px;
+}
+
+.right_text .title span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.right_text .title h2 {
+    font-size: 32px;
+    margin-top: 10px;
+    line-height: 44px;
+    font-family: 'hyundai';
+}
+
+.right_text .title p {
+    margin-top: 36px;
+}
+
+.right_text .btn {
+    display: flex;
+}
+.right_text .btn a {
+    display: block;
+    width: 114px;
+    height: 62px;
+    line-height: 62px;
+    background-color: #010101;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 8px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.right_text .btn .msg {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.right_text .btn .msg span {
+    color: #fff;
+    background-color: #010101;
+    line-height: 20px;
+    border-radius: 8px;
+    padding: 4px 8px;
+}
+
+.right_text .mmb_fee {
+    margin-top: 48px;
+    width: 342px;
+    border:  1px solid #d9d9d9;
+    border-radius: 23px;
+    padding: 16px;
+}
+.right_text .mmb_fee .fee {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right_text .mmb_fee .list {
+    margin-top: 8px;
+    padding-right: 4px;
+}
+
+.right_text .mmb_fee .list li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    margin-top: 8px;
+    padding-right: 4px;
+}
+
+.right_text .mmb_fee .list li p {
+    font-weight: bold;
+}
+
+.big_banner {
+    width: 100%;
+    height: 1288px;
+    background-color: #E8EAEB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_banner .red_book {
+    background-image: url(../images/bg_benefit_tre5_off.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1294px;
+    height: 938px;
+    position: relative;
+}
+
+.big_banner .red_book .title_book {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: #fff;
+}
+
+.big_banner .red_book .title_book h3 {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 44px;
+    
+}
+
+.big_banner .red_book .title_book .group {
+    margin-top: 30px;
+}
+.big_banner .red_book .title_book .group h3 {
+    font-family: 'hyundai';
+}
+.big_banner .red_book .title_book .group span {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.big_banner .red_book .card_book {
+    position: absolute;
+    top: 265px;
+    right: 180px;
+    /* display: none; */
+    transition: all 0.025s;
+}
+
+
+.big_banner .red_book .card_book img {
+    width: 350px;
+    height: 400px;
+}
+
+.card_design {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card_design h2 {
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+.card_design .cards {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_design .cards li {
+    width: 174px;
+    margin: 0 40px;
+    transition: all 0.5s;
+
+}
+
+.card_design.active .cards li  {
+    width: 122px;
+    margin: 0 20px;
+}
+
+.card_design.active .cards li img {
+    width: 100%;
+    display: block;
+}
+.card_voucher {
+    display: flex;
+}
+
+.card_voucher .photo {
+    width: 778px;
+    height: 1214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_voucher img {
+    display: block;
+    width: 100%;
+    
+}
+
+.card_voucher .photo, .card_voucher .texts {
+    flex: 1;
+}
+.card_voucher .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 588px;
+    margin-left: 36px;
+}
+
+.card_voucher .texts h3 {
+    font-size: 28px;
+}
+
+.card_voucher .texts h2 {
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.card_voucher .texts .group {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.card_voucher .texts .group .Voucher {
+    margin-top: 40px;
+    line-height: 26px;
+}
+
+.card_voucher .texts h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+
+}
+
+.card_voucher .texts .group .Voucher span {
+    margin-top: 8px;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.card_voucher .texts a {
+    margin-top: 64px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card_travel {
+    margin-top: 160px;
+}
+
+.travels {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.travels h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card_travel .full_box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 24px;
+}
+
+.card_travel .full_box .box {
+    width: 562px;
+    height: 358px;
+    background-color: #333333;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.card_travel .full_box .text_box {
+    display: grid;
+}
+.card_travel .full_box .text_box span {
+    font-size: 24px;
+    color: #d9d9d9;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.card_travel .full_box .text_box h3 {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.card_travel .full_box .icon_box {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+}
+
+.card_travel .full_box .icon_box img {
+    display: block;
+    width: 100px;
+}
+
+.card_travel .full_box .icon_plus {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.black_banner{
+    width: 100%;
+    height: 582px;
+    background-color: #010101;
+    margin-top: 172px;
+    color: #fff;
+    padding: 120px 0;
+}
+
+.black_banner h1 {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.black_banner .banner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.black_banner .mail {
+    display: flex;
+}
+
+.mail_box:last-child {
+    margin-left: 88px;
+}
+
+.mail_box {
+    margin-top: 95px;
+    width: 320px;
+    border-top: 1px solid #fff;
+    padding-top: 6px;
+}
+
+.mail_box h2 {
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.mail_box .mail_letter {
+    display: grid;
+}
+
+.mail_box .mail_letter a {
+    display: block;
+    margin-top: 24px;
+}
+
+.mail_box .mail_letter span {
+    font-size: 14px;
+    margin-top: 24px;
+    line-height: 26px;
+}
+
+.card_bonus {
+    margin-top: 175px;
+}
+
+.card_bonus .bonus {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.card_bonus .bonus .box {
+    width: 1143px;
+    height: 400px;
+    background-color: #F5F5F5;
+    border-radius: 28px;
+    padding: 40px;
+    line-height: 52px;
+    margin-top: 24px;
+}
+
+.bonus .text_box {
+    font-weight: bold;
+}
+
+.bonus .text_box h2 {
+    font-size: 40px;
+    line-height: 52px;
+}
+
+.bonus .plus_box {
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 0;
+}
+
+.bonus .plus_box li {
+    display: flex;
+    margin-right: 56px;
+}
+
+.bonus .plus_box .icon {
+    padding: 20px;
+}
+
+.bonus .plus_box .icon img {
+    display: block;
+    width: 100%;
+}
+
+.bonus .plus_box .text {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+}
+
+.bonus .plus_box a {
+    position: absolute;
+    bottom: -65px;
+    right: -25px;
+}
+
+.apple_pay {
+    width: 1200px;
+    display: grid;
+    text-align: center;
+    margin: 160px auto;
+
+}
+    
+.apple_pay .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple_pay .logo {
+    width: 130px;
+    height: 85px;
+}
+.apple_pay .logo img {
+    display: block;
+    width: 100%;
+}
+
+.apple_pay h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 24px;
+}
+
+.apple_pay h4 {
+    color: #2671EF;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 28px;
+}
+
+/* footer */
+
+.footer {
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 36px 0;
+    border-top: 1px solid #333;
+}
+
+.footer .footer_s {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+
+}
+.footer .footer_s > div {
+    flex: 1;
+}
+
+.footer > div {
+}
+
+.footer .footer_customer {
+    display: grid;
+}
+
+.footer .footer_customer a {
+   
+}
+
+.footer .footer_customer span {
+    color: #666;
+    padding-left: 30px;
+}
+
+.footer .footer_customer span:nth-child(2) {
+    padding-left: 0px;
+}
+
+.footer .footer_corp {}
+
+.footer .footer_corp p {
+    color: #666;
+}
+
+.footer .footer_corp.sec{
+    padding-top: 21px;
+}
+
+.footer .footer_place .footer_link {
+    margin-bottom: 43px;
+}
+
+.footer .footer_place .footer_link a {
+    padding-right: 16px;
+}
+
+.footer_mark {
+    display: flex;
+    margin-top: 30px;
+    gap: 14px;
+}
+
+.footer_address .footer_mark .icon_1 {
+    width: 57px;
+    height: 42px;
+}
+
+.footer_address .footer_mark .icon_2 {
+    width: 80px;
+    height: 38px;
+}
+
+.footer_mark .icon_1 img , .icon_2 img {
+    display: block;
+    width: 100%;
+}
+
+/* dimm */
+
+.dimm {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.dimm .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 580px;
+    height: 380px;
+    padding: 40px;
+    z-index: 10000;
+    opacity: initial;
+    background-color: #fff;
+    border-radius: 28px;
+
+}
+
+.dimm .modal h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.dimm .modal .btn {
+    display: flex;
+    margin-top: 170px;
+    gap: 20px;
+}
+
+.dimm .modal .btn a {
+    display: block;
+    width: 243px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    font-size: 18px;
+    line-height: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dimm .modal .btn a:nth-child(2) {
+    background-color: #010101;
+    color: #fff;
+}
+
+.dimm .modal .close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+   
+}
+
+.dimm .modal .close a {
+    display: block;
+}
+
+.dimm .modal .close i {
+    font-size: 32px;
+    
+}

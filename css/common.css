@@ -1,0 +1,302 @@
+@font-face {
+    font-family: 'hyundai';
+    src: url('../fonts/YouandiModernTR.ttf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header {
+    position: relative;
+    z-index: 100;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: #fff;
+    transition: all 0.3s;
+    border-top: 1px solid #ccc;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.15)
+}
+
+.header.active:after {
+    height: 414px;
+
+}
+
+
+.main_header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    /* border-bottom: 1px solid; */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 36px;
+    width: 145px;
+    margin: 0 38px;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    
+}
+
+.gnb {
+    display: flex;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.gnb > li {
+    display: flex;
+    position: relative;
+
+}
+
+.gnb > li > a {
+    display: flex;
+}
+
+
+.gnb > li > ul {
+    background-color: #fff;
+    width: 100%;
+    height: 414px;
+    
+}
+
+.gnb > li > a {
+    display: block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 20px;
+    font-family: 'hyundai';
+}
+
+.gnb > li > a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.gnb > li:nth-child(7) a {
+    font-family: initial;
+    font-size: 24px;
+}
+
+.gnb .sub {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    width: 100vw;
+    height: 362px;
+    opacity: 0;
+}
+
+.gnb .sub ul:nth-child(4) {
+    margin-right: 125px;
+
+}
+.gnb > li .sub ul {
+    padding: 40px;
+
+}
+
+.gnb > li .sub ul li {
+    padding-bottom: 10px;
+    color: #666;
+    
+}
+
+.gnb > li .sub ul li:nth-child(1) {
+    padding-bottom: 16px;
+    color: #000;
+}
+
+.gnb > li:nth-child(1):hover .sub {
+    opacity: 1;
+}
+
+
+.s_login::before {
+}
+
+.s_login {
+    width: 334px;
+    height: 339px;
+    padding-left: 60px;
+    border-left: 1px solid #ccc;
+    margin-top: 40px;
+
+}
+
+.s_login h2 {
+    font-size: 14px;
+    padding-bottom: 55px;
+}
+
+.s_login p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.s_login a {
+    display: block;
+    width: 136px;
+    height: 56px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    line-height: 56px;
+    text-align: center;
+    margin: 36px auto;
+}
+
+.s_login .black_box {
+    width: 334px;
+    height: 80px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    
+}
+
+.s_login .black_box .box {
+    font-size: 14px;
+    display: grid;
+    margin: 18px 30px;
+}
+
+.s_login .black_box span:nth-child(1) {
+    color: #888;
+    font-weight: 400;
+ }
+
+.s_login .black_box a { 
+    display: block;
+    width: 70px;
+    height: 43px;
+    margin: 18px 30px;
+}
+
+.s_login .black_box img {
+    width: 100%;
+    display: block;
+}
+
+.search {
+    display: flex;
+}
+
+.direct {
+    display: flex;
+    padding-right: 18px;
+    align-items: center;
+}
+
+.direct p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 8px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direct p:nth-child(3) {
+    border-right: 1px solid #666;
+    height: 10px;
+}
+
+.search_bar {
+    position: relative;
+    margin-right: 28px;
+
+}
+
+.search_bar i {
+    font-size: 16px;
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    margin: 0 6px;
+}
+
+input {
+    width: 240px;
+    border: 1px solid #888;
+    border-radius: 20px;
+    padding: 10px 0;
+    padding-right: 8px;
+    padding-left: 26px;
+    font-size: 14px;
+}
+
+/* popup */
+
+.pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+
+.h_popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1600px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.h_popup p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h_popup p i {
+    font-size: 24px;
+}
+
+.h_popup span {
+    display: block;
+    padding: 0 12px;
+}
