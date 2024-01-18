@@ -54,6 +54,7 @@
     width: 1195px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .arrows .btn_prev, .arrows .btn_next {

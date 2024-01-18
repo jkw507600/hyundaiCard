@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the red Editions</title>
+    <title>Hyundai card</title>
     <link rel="stylesheet" href="../css/detail.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/event.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="../images/favicon-32x32-hyundai.png">
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
+
 <body>
     <div class="wrap">
         <div class="header">
             <div class="main_header"></div>
             <div class="category"></div>
         </div>
-        <div class="main"> 
-            <h2>원하시는 카드 디자인을 선택해 주세요</h2>           
+        <div class="main">
+            <h2>원하시는 카드 디자인을 선택해 주세요</h2>
             <div class="swiper slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -65,7 +68,7 @@
                     <!-- <h3>Enamel</h3>
                     <p>스카이블루 포인트로 레드가 강조된 디자인</p> -->
                 </div>
-            </div>    
+            </div>
             <div class="button">
                 <a href="#">선택 완료</a>
             </div>
@@ -87,13 +90,13 @@
 
 <script>
 
-var items = [
-            { title:'Enamel', category: '스카이블루 포인트로 레드가 강조된 디자인'},
-            { title:'Fur', category: 'Fur텍스처가 돋보이는 볼드한 디자인'},
-            { title:'Marker', category: '레드 마커로 채운 강렬한 디자인'},
-            { title:'Enamel', category: '스카이블루 포인트로 레드가 강조된 디자인'},
-            { title:'Fur', category: 'Fur텍스처가 돋보이는 볼드한 디자인'},
-            { title:'Marker', category: '레드 마커로 채운 강렬한 디자인'},
+    var items = [
+        { title: 'Enamel', category: '스카이블루 포인트로 레드가 강조된 디자인' },
+        { title: 'Fur', category: 'Fur텍스처가 돋보이는 볼드한 디자인' },
+        { title: 'Marker', category: '레드 마커로 채운 강렬한 디자인' },
+        { title: 'Enamel', category: '스카이블루 포인트로 레드가 강조된 디자인' },
+        { title: 'Fur', category: 'Fur텍스처가 돋보이는 볼드한 디자인' },
+        { title: 'Marker', category: '레드 마커로 채운 강렬한 디자인' },
     ]
 
     var list = $('.text_boxs')
@@ -101,33 +104,35 @@ var items = [
 
 
     var swiper = new Swiper(".slider", {
-      zoom: true,
-      slidesPerView: 3,
-      spaceBetween: 50, 
-      centeredSlides: true,
-      loop: true,
-      navigation: {
-        nextEl:".xi-angle-right",
-        prevEl:".xi-angle-left",
-      },
-      on: { slideChange : (index) => {
-        var idx = index.realIndex
+        zoom: true,
+        slidesPerView: 3,
+        spaceBetween: 50,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+            nextEl: ".xi-angle-right",
+            prevEl: ".xi-angle-left",
+        },
+        on: {
+            slideChange: (index) => {
+                var idx = index.realIndex
 
-        console.log(idx);
+                console.log(idx);
 
-        var row = `<div">
+                var row = `<div">
                     <h3>${items[idx].title}</h3>
                     <p>${items[idx].category}</p>
                    </div>`
-        list.html(row)
-      }}
+                list.html(row)
+            }
+        }
     });
 
-    
 
-    
 
-   
+
+
+
 </script>
 
 </html>
