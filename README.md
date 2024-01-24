@@ -36,41 +36,58 @@ ScrollReveal
 
 주요 기능
   =====
-  
-메인 슬라이드 쇼
+1.모달 표시 및 닫기:
 
-*Slick Carousel을 활용하여 동적이고 매끄러운 메인 슬라이드 쇼 제공.
+showModal ID를 가진 요소를 클릭하면 모달이 나타납니다.
+closeModal ID를 가진 요소를 클릭하면 모달이 닫힙니다.
+예시:
+$('#showModal').click(function () {
+    $('.dimm').show();
+});
 
-카드 소개 및 혜택 정보
+$('#closeModal').click(function () {
+    $('.dimm').hide();
+});
 
-*현대카드의 주요 카드 상품 소개 및 각 카드의 특징, 혜택을 제공.
+2.동적 콘텐츠 로딩:
 
-Champion Brands 및 협력사 소개
+jQuery의 load 함수를 사용하여 다양한 요소의 콘텐츠를 동적으로 로드합니다.
+예시:
+헤더 로딩: $('.main_header').load('../inc/header.html')
+카테고리 로딩: $('.category').load('../inc/category.html')
+푸터 로딩: $('.footer').load('../inc/footer.html')
 
-*다양한 협력사 및 브랜드와의 제휴 정보를 소개하고, 해당 제휴로 제공되는 카드 상품을 소개.
+3.스크롤 이벤트 처리:
 
-앱 소개 슬라이드
+스크롤 위치에 따라 특정 요소의 가시성이나 동작을 제어하기 위한 스크롤 이벤트 리스너가 있습니다.
+예시:
+html
+Copy code
+$(window).scroll(function () {
+    // '.card_book' 요소에 대한 스크롤 처리
+    // 스크롤 위치에 따라 투명도 변경
+});
 
-현대카드 앱 및 기타 제휴 앱 소개 슬라이드 제공.
+4.Swiper (슬라이더) 초기화:
 
-폴더 및 파일 구조
-  =====
-  
-css: 스타일 시트 파일들을 포함한 폴더
+카드 선택 슬라이더에 대한 Swiper 초기화가 이루어집니다.
+슬라이더에는 네비게이션 화살표가 있으며 현재 항목의 세부 정보가 동적으로 표시됩니다.
+예시:
+html
+Copy code
+var swiper = new Swiper(".slider", {
+    // Swiper 설정
+    on: {
+        slideChange: (index) => {
+            // 현재 슬라이드를 기반으로 콘텐츠 동적으로 업데이트
+        }
+    }
+});
 
-images: 웹페이지에서 사용되는 이미지 파일들을 포함한 폴더
+5.동적 링크 수정:
 
-inc: 웹페이지의 헤더 등의 공통적인 요소를 포함한 폴더
-
-js: JavaScript 파일들을 포함한 폴더
-
-README.md: 현재 보고 있는 문서
-
-외부 라이브러리 및 프레임워크
-  =====
-
-jQuery: JavaScript 라이브러리
-
-Slick Carousel: 이미지 슬라이드 기능을 제공하는 라이브러리
-
-ScrollReveal: 스크롤에 따른 요소의 애니메이션을 적용하는 라이브러리
+특정 링크의 href 속성이 동적으로 수정됩니다.
+예시:
+$('#click').attr('href', './event.html')
+$('.card_design a').attr('href', './event.html')
+$('.main .button a').attr('href', './event_2.html')  
