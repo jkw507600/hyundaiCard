@@ -34,6 +34,8 @@
 
 - **`Slick Carousel`**
 
+- **`Swiper`**
+
 - **`ScrollReveal`**
 
 
