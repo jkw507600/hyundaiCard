@@ -1,4 +1,4 @@
-﻿# :desktop_computer: HyundaiCard Clone :credit_card:
+﻿# :desktop_computer: 현대카드 클론사이트 제작 :credit_card:
 
 ## :hand: 소개
 
