@@ -1,93 +1,75 @@
-﻿# hyundaiCard
+﻿# HyundaiCard Clone
+
+## 소개
+
+ 현대카드의 웹사이트를 클론하여 만든 포트폴리오 프로젝트로, 현대카드만이 가진 브랜드 가치를 이해하고 그에 따른 독특한 디자인을 구현할 수 있도록 노력하였습니다. 웹사이트에 사용된 이벤트들을 살펴보며 사용된 코드를 정리하였습니다. 
+
+## 목차
+
  
+1. 소개
 
-목차
- =====
- 
-1.소개
+2. 사용 기술
 
-2.사용 기술
-
-3.주요 기능
-
-4.폴더 및 파일 구조
-
-5.외부 라이브러리 및 프레임워크
+3. 주요 기능
 
 
- 소개
-  =====
-이 웹페이지는 현대카드의 다양한 신용카드 상품, 혜택, 그리고 협력사와의 프로모션을 소개하는 페이지입니다. 직관적인 디자인과 함께 사용자들에게 흥미로운 콘텐츠를 제공하여 현대카드의 브랜드 가치를 전달합니다.
-
-사용 기술
-
-HTML5
-
-CSS3
-
-JavaScript
-
-jQuery
-
-Slick Carousel
-
-ScrollReveal
+## 사용 기술
 
 
-주요 기능
-  =====
-1.모달 표시 및 닫기:
+- **HTML5** 
 
-showModal ID를 가진 요소를 클릭하면 모달이 나타납니다.
-closeModal ID를 가진 요소를 클릭하면 모달이 닫힙니다.
-예시:
-$('#showModal').click(function () {
-    $('.dimm').show();
-});
+- **CSS3**
 
-$('#closeModal').click(function () {
-    $('.dimm').hide();
-});
+- **JavaScript**
 
-2.동적 콘텐츠 로딩:
+- **jQuery**
 
-jQuery의 load 함수를 사용하여 다양한 요소의 콘텐츠를 동적으로 로드합니다.
-예시:
-헤더 로딩: $('.main_header').load('../inc/header.html')
-카테고리 로딩: $('.category').load('../inc/category.html')
-푸터 로딩: $('.footer').load('../inc/footer.html')
+- **Slick Carousel**
 
-3.스크롤 이벤트 처리:
+- **ScrollReveal**
 
-스크롤 위치에 따라 특정 요소의 가시성이나 동작을 제어하기 위한 스크롤 이벤트 리스너가 있습니다.
-예시:
-html
-Copy code
-$(window).scroll(function () {
-    // '.card_book' 요소에 대한 스크롤 처리
-    // 스크롤 위치에 따라 투명도 변경
-});
 
-4.Swiper (슬라이더) 초기화:
+## 주요 기능
 
-카드 선택 슬라이더에 대한 Swiper 초기화가 이루어집니다.
-슬라이더에는 네비게이션 화살표가 있으며 현재 항목의 세부 정보가 동적으로 표시됩니다.
-예시:
-html
-Copy code
-var swiper = new Swiper(".slider", {
-    // Swiper 설정
-    on: {
-        slideChange: (index) => {
-            // 현재 슬라이드를 기반으로 콘텐츠 동적으로 업데이트
-        }
-    }
-});
+  
+### 1.모달 이벤트:
 
-5.동적 링크 수정:
+ 모달창이 열리고 닫기는 상호 작용을 구현하였습니다.
 
-특정 링크의 href 속성이 동적으로 수정됩니다.
-예시:
-$('#click').attr('href', './event.html')
-$('.card_design a').attr('href', './event.html')
-$('.main .button a').attr('href', './event_2.html')  
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/87e0fa6d-8644-40de-b6fa-b9d4f00a214e)
+
+
+### 2.콘텐츠 로딩:
+
+jQuery의 load 함수를 사용하여 다양한 요소의 콘텐츠를 로드합니다.
+
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/f9e7cc22-0850-430f-8c1a-a5247c30fb17)
+
+
+### 3.스크롤 이벤트 처리:
+
+스크롤 이벤트를 활용하여 특정 위치에 도달했을때 동작을 실행할 수 있게 제어하였습니다.
+
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/db5488de-a824-4cd3-b420-ae1a8dcf1e1a)
+
+
+### 4.Swiper 슬라이더 활용:
+
+Swiper 라이브러리를 사용하여 카드 선택 슬라이더를 구현했습니다. 선택한 카드에 따라 세부 정보가 나타나게 업데이트됩니다.
+
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/f589bd5f-a14d-4fe0-b2e1-1aea5efe99fd)
+
+### 5.slick 슬라이더 활용:
+
+Slick 라이브러리를 사용하여 간단한 슬라이더를 구현했습니다. 다양한 옵션을 추가하여 슬라이더를 구현하였습니다.
+
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/c9344b7f-28e7-4828-91c2-8f94c8df4505)
+
+
+### 6.링크 업데이트 스크립트:
+
+해당 클래스에 속한 대상들이 클릭되었을 때 이 링크로 이동하게 됩니다.
+
+![image](https://github.com/jkw507600/hyundaiCard/assets/145305173/aad70b76-f2ba-48b5-8b17-6cd62c3284f6)
+  
